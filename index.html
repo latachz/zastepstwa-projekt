@@ -1,0 +1,111 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Zastepstwa</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="KL">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+  	table th {
+   text-align: center; 
+}
+
+.table {
+   margin: auto;
+   width: 50% !important; 
+}
+  </style>
+
+</head>
+
+<body>
+	<center> <img src="zsk.png"></img></center>
+	<!--Table-->
+	<table class="table" id="empTable">
+
+	  <!--Table head-->
+	  <thead>
+	    <tr">
+	      <th>Lekcja</th>
+	      <th>Nauczyciel</th>
+	      <th>Opis</th>
+	      <th>Zastepca</th>
+	      <th>Uwagi</th>
+	    </tr>
+	  </thead>
+	  <!--Table head-->
+
+	  <!--Table body-->
+	  <tbody>
+	    <tr class="bg-primary">
+	      <th scope="row">1</th>
+	      <td>Magdalena Jokiel</td>
+	      <td>lorem ipsum</td>
+	      <td>Adam Nowak</td>
+	      <td>za nieobecny oddział</td>
+	    </tr>
+	    <tr class="table">
+	      <th scope="row">2</th>
+	      <td>Magdalena Jokiel</td>
+	      <td>lorem ipsum</td>
+	      <td>Adam Nowak</td>
+	      <td>za nieobecny oddział</td>
+	    </tr>
+	    <tr class="bg-primary">
+	      <th scope="row">3</th>
+	      <td>Magdalena Jokiel</td>
+	      <td>lorem ipsum</td>
+	      <td>Adam Nowak</td>
+	      <td>za nieobecny oddział</td>
+	    </tr>
+	    <tr class="table">
+	      <th scope="row">4</th>
+	      <td>Magdalena Jokiel</td>
+	      <td>lorem ipsum</td>
+	      <td>Adam Nowak</td>
+	      <td>za nieobecny oddział</td>
+	    </tr>
+	    <tr class="bg-primary">
+	      <th scope="row">5</th>
+	      <td>Magdalena Jokiel</td>
+	      <td>lorem ipsum</td>
+	      <td>Adam Nowak</td>
+	      <td>za nieobecny oddział</td>
+	    </tr>
+	    <<tr class="table">
+	      <th scope="row">6</th>
+	      <td>Magdalena Jokiel</td>
+	      <td>lorem ipsum</td>
+	      <td>Adam Nowak</td>
+	      <td>za nieobecny oddział</td>
+	    </tr>
+	  </tbody>
+	  <!--Table body-->
+
+
+	</table>
+	</div>
+	<!--Table-->
+
+</body>
+
+<script>
+        document.getElementById('info').innerHTML = "";
+        var myTab = document.getElementById('empTable');
+        for (i = 1; i < myTab.rows.length; i++) {
+
+            var objCells = myTab.rows.item(i).cells;
+
+            for (var j = 0; j < objCells.length; j++) {
+                info.innerHTML = info.innerHTML + ' ' + objCells.item(j).innerHTML;
+            }
+            info.innerHTML = info.innerHTML + '<br />'; 
+        }
+ 
+</script>	
+</html>	
