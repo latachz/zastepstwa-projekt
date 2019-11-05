@@ -8,9 +8,19 @@ from pynput.keyboard import Key, Controller
 
 keyboard = Controller()
 
+i = 5
+
 while True:
-    webbrowser.open_new_tab('zastepstwa.html')
     keyboard.press(Key.f5)
     keyboard.release(Key.f5)
-    time.sleep(14400) #every 4h
-
+    while i <= 8:
+        keyboard.press(Key.down)
+        keyboard.release(Key.down)
+        time.sleep(2)
+        
+    while i <= 8:
+        keyboard.press(Key.up)
+        keyboard.release(Key.up)
+        time.sleep(2)
+        
+    time.sleep(3)
