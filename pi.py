@@ -8,19 +8,25 @@ from pynput.keyboard import Key, Controller
 
 keyboard = Controller()
 
-i = 5
+i = 0
+n = 60 
 
 while True:
-    keyboard.press(Key.f5)
-    keyboard.release(Key.f5)
-    while i <= 8:
-        keyboard.press(Key.down)
-        keyboard.release(Key.down)
-        time.sleep(2)
-        
-    while i <= 8:
-        keyboard.press(Key.up)
-        keyboard.release(Key.up)
-        time.sleep(2)
-        
-    time.sleep(3)
+    #keyboard.press(Key.f5)
+    #keyboard.release(Key.f5)
+    while i <= n + 1:
+        if i <= n/2:
+            keyboard.press(Key.down)
+            keyboard.release(Key.down)
+            print(i)
+            i += 1;
+        elif i <= n and i > n/2:
+            keyboard.press(Key.up)
+            keyboard.release(Key.up)
+            print(i)
+            i += 1;
+        else:
+            i = 0
+        time.sleep(1)
+
+    time.sleep(10)
