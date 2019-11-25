@@ -7,7 +7,7 @@ def push_file_to_server():
     cnopts.hostkeys = None 
     f = sftp.Connection(host='192.168.43.222', username='pi', password='qwerty1231', cnopts=cnopts)
     local_path = "zastepstwa.html"
-    remote_path = "/home/pi/Desktop/zastepstwa-projekt/zastepstwa.html"
+    remote_path = "/home/pi/Desktop/zastepstwa-gui/zastepstwa.html"
 
     f.put(local_path, remote_path)
     f.close()
