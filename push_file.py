@@ -3,7 +3,7 @@
 import pysftp as sftp
 
 def push_file_to_server():
-    f = sftp.Connection(host='192.168.0.10', username='pi', password='qwerty1231')
+    f = sftp.Connection(host='192.168.220.38', username='pi', password='qwerty1231')
     local_path = "zastepstwa.html"
     remote_path = "/home/pi/Desktop/zastepstwa-gui/zastepstwa.html"
 
